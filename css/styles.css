@@ -26,7 +26,7 @@ header {
     background: url(../resources/Studiopolisskyline4096x2160.png);
     background-size: cover;
     background-attachment: fixed;
-    background-position: relative;
+    position: relative;
 }
 nav {
     text-align: right;
@@ -77,8 +77,14 @@ header .headertext{
     color: white;
     font-weight: 300;
 }
-/*.wave{
-    position: relative;
+.wave{
+    position: absolute;
     bottom: 0;
     width: 100%;
-}*/
+    height: 180px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .wave{
+        height: 50px;
+    }
+}
