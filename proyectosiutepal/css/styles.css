@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: roboto;
+}
+.container{
+    padding: 60px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    font-size: 50px;
+    color: #3a0453;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* Header */
+header {
+    width: 100%;
+    height: 600px;
+    background: url(/resources/Studiopolisskyline4096x2160.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav {
+    text-align: right;
+    padding: 30px 0px 30px 0px;
+}
+nav > a{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+header .headertext{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.headertext h1{
+    font-size: 60px;
+    color: white;
+}
+.headertext h2{
+    font-style: oblique;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+}
+.proyectosiutepal {
+    background: #fff;
+}
+.galeriaproyectosiutepal {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#estructura .titulo{
+    color: #f4d363;
+}
+#estructura .hovergaleriaproyectosiutepal{
+    background: rgba(244, 180, 84, .7);
+}
+#lenguajes{
+    background: #f2f2f2;
+}
+.imgsemestre {
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+}
+.imgsemestre > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hovergaleriaproyectosiutepal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(162, 54, 164, .8);
+    transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hovergaleriaproyectosiutepal img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+.hovergaleriaproyectosiutepal p{
+    padding-top: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+.imgsemestre:hover .hovergaleriaproyectosiutepal{
+    transform: scale(1);
+}
+.containertextiutepal p{
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 300;
+}
+/*footer*/
+footer{
+    background: #3a0453;
+    padding: 30px 0 0 0;
+    margin: auto;
+    overflow: hidden;
+}
+.container-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.contenido-foot{
+    color: #fff;
+    text-align: center;
+}
+.contenido-foot h4{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a236a4;
+}
+.contenido-foot p{
+    font-weight: 300;
+}
+.contenido-foot p > a{
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+.contenido-foot p > a:hover{
+    text-decoration: underline;
+}
+.finaltitle {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: white;
+    font-weight: 300;  
+}
+.credits{
+    font-weight: 100;
+    color: #fff;
+    text-align: right;
+    padding-right: 5px;
+}
+.credits > a{
+    text-decoration: none;
+    color: #fff;
+}
+.credits > a:hover{
+    text-decoration: underline;
+}
+/*for smarthphones*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .titulo{
+        font-size: 35px;
+    }
+    /*header*/
+    header {
+        height: 500px;
+        background-position: center;
+    }
+    nav {
+        text-align: center;
+        padding: 15px 0px 15px 15px;
+    }
+    nav > a{
+        color: white;
+        font-weight: 300;
+        font-size: 13px;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+    .wave{
+        height: 50px;
+    }
+    .headertext h2{
+        font-size: 20px;
+    }
+    /*main*/
+    .imgsemestre{
+        width: 40%;
+        height: 150px;
+    }
+    /*footer*/
+    .container-footer{
+        flex-direction: column;
+        border-bottom: none;
+    }
+    .contenido-foot h4{
+        border-bottom: none;
+    }
+    .contenido-foot p{
+        border-bottom: 1px solid #a236a4;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    .finaltitle{
+        font-size: 15px;
+    }
+    .credits{
+        text-align: center;
+        font-size: 10px;
+    }
+}
