@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+.headerlogo>h2 {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, rgba(78, 42, 113, 0.5), rgba(78, 42, 113, 0.5)), url(/resources/mainKVUPSCALED.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 1000px;
+    position: relative;
+}
+
+.headerlogo {
+    margin-top: 100px;
+    fill: #fff;
+}
+
+.headertext {
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: auto;
+    width: 40%;
+}
+
+nav>a {
+    color: #4e2a71;
+    text-decoration: none;
+    padding: 0px 0px 10px 10px;
+}
+
+nav>a:hover {
+    transition: 100ms;
+    background-color: #4e2a71;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+/*end header*/
+.container {
+    padding: 60px 0px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    color: #4e2a71;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.img{
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+.img > img{
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px rgba(0, 0, 0, .2);
+}
+
+.galeriaimg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.videos{
+    background-color: #4e2a71;
+}
+.contvid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.galeriavid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.video{
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+.videos .container > h2{
+    color: #fff;
+}
+.video > video{
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px rgba(0, 0, 0, .2);
+}
+.obenkyou {
+    font-size: 18px;
+}
+.galeriaaud {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.aud{
+    margin: 10px 10px 10px 10px;
+}
+.galeriaaud .aud .textgaleria{
+    margin-bottom: 10px;
+}
+.galeriaaud .aud .textgaleria > p > span{
+    background: #a236a4;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #a236a4;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+    margin-right: 15px;
+}
+ /*footer*/
+ footer {
+     background: #4e2a71;
+     padding: 30px 0 0 0;
+     margin: auto;
+     overflow: hidden;
+ }
+
+ .container-footer {
+     display: flex;
+     width: 90%;
+     justify-content: space-evenly;
+     margin: auto;
+     padding-bottom: 20px;
+     border-bottom: 1px solid #fff;
+ }
+
+ .contenido-foot {
+     color: #fff;
+     text-align: center;
+ }
+
+ .contenido-foot h4 {
+     margin-bottom: 5px;
+     padding-bottom: 5px;
+     border-bottom: 1px solid #a236a4;
+ }
+
+ .contenido-foot p {
+     font-weight: 300;
+ }
+
+ .contenido-foot p>a {
+     font-weight: 300;
+     text-decoration: none;
+     color: white;
+ }
+
+ .contenido-foot p>a:hover {
+     text-decoration: underline;
+ }
+
+ .finaltitle {
+     text-align: center;
+     padding: 20px 0 20px 0;
+     color: white;
+     font-weight: 300;
+ }
+
+ .credits {
+     font-weight: 100;
+     color: #fff;
+     text-align: right;
+     padding-right: 5px;
+ }
+
+ .credits>a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ .credits>a:hover {
+     text-decoration: underline;
+ }
